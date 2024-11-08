@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #9d9d9d;
+}
+
+.navbar,
+.mainname {
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-image: url("src/assets/snookercup.png");
+  background-position: bottom;
+  height: 500px;
+}
+
+.cardtitle {
+  color: white;
+  font-family: fantasy;
+  font-size: 40px;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
+}
+
+.searchbar {
+  color: white;
+}
+
+.searchinput {
+  height: 44px;
+  width: 200px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(226, 226, 226);
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-inline: 3%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.button-6 {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  /* min-height: 3rem; */
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .buttonbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .hamburger {
+    display: block;
+  }
+  .buttonbar.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
