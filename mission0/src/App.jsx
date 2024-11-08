@@ -22,9 +22,11 @@ function App() {
         <div className="hamburger" onClick={toggleMenu}>
           ☰
         </div>
+        {"  "}
       </div>
       <div className="card">
         <div className="cardtitle">
+          {<br></br>}
           {<br></br>}
           {"GET ALL YOUR LATEST POOL"} {<br></br>}
           {"SNOOKER and BILLIARDS NEWS"}

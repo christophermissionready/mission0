@@ -8,6 +8,8 @@
   align-items: center;
   padding: 10px 20px;
   background-color: #9d9d9d;
+  width: 98%;
+  position: fixed;
 }
 
 .navbar,
@@ -21,7 +23,7 @@
   flex-direction: column;
   background-image: url("src/assets/snookercup.png");
   background-position: bottom;
-  height: 500px;
+  height: 600px;
 }
 
 .cardtitle {
